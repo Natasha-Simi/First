@@ -1,0 +1,74 @@
+/*Type selectors*/
+body{
+	background: yellow;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	margin: 0;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Markazi Text', serif;
+	color: crimson;
+}
+/*Class selectors*/
+.container{
+	width: 80%;
+	margin:auto;
+}
+.nav{
+	background: pink;
+	padding:1em 2em;
+}
+
+.intro{
+	font-size: 1.2em;
+	color: gray;
+}
+
+/*ID selectors*/
+#header, #footer{
+	background: black;
+	color:white;
+	padding: 2em;
+
+}
+
+/* Universal selectors*/
+
+/*Descendant selectors*/
+.nav li{
+	display: inline;
+	margin-right: 1em;
+}
+.nav li a{
+	color: white;
+
+}
+.nav li a:hover{
+	color:yellow;
+	font-style: italic;
+	font-weight: bold;
+
+}
+/*Child selectors*/
+.nav li > a{
+	text-decoration: none;
+}
+/*AAdjascent sibling selectors*/
+	h3 + h4{
+		margin-top: 2em;
+		border-top: 1px dashed pink;
+
+	}
+/*Psuedo selectors*/
+a:link{
+	color:crimson;
+}
+a:visited{color:pink;}
+a:focus{color: black}
+a:hover{color:red;}
+a:active{color:blue;}
